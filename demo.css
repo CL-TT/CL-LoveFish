@@ -1,0 +1,40 @@
+@charset='UTF-8';
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+/*********************这是游戏的主要区域*******************/
+.main{
+	width: 1000px;
+	height: 616px;
+	/*border: 1px solid #356;*/
+	margin:0 auto;
+	position: relative;
+}
+
+.game-rule{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*******************画布样式****************/
+.canvas1{     /*在前面*/
+	position: absolute;
+	/*border:1px solid red;*/
+	margin-left: 40px;
+	z-index: 1;   /*配合着绝对定位使用*/
+}
+
+.canvas2{     /*在后面*/
+	position: absolute;
+	margin-left: 40px;
+	z-index: 0;       /*值越小越在后面*/
+}
